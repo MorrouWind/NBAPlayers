@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashNBA">
+
+    <fragment
+        android:id="@+id/splashNBA"
+        android:name="com.du.hast.ui.splash.SplashNBAFragment"
+        android:label="SplashNBA" >
+        <action
+            android:id="@+id/to_nbaPlayers"
+            app:destination="@id/nbaPlayers" />
+    </fragment>
+    <fragment
+        android:id="@+id/nbaPlayers"
+        android:name="com.du.hast.ui.nba_players.NbaPlayersFragment"
+        android:label="NbaPlayers" >
+        <action
+            android:id="@+id/to_selectedPlayer"
+            app:destination="@id/selectedPlayer" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectedPlayer"
+        android:name="com.du.hast.ui.player.SelectedPlayerFragment"
+        android:label="SelectedPlayerFragment" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+    </fragment>
+</navigation>

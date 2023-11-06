@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">10 Prominent NBA Players</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="short_descr">I provide you a list of 10 prominent NBA players who were among the best in the league until 2020.</string>
+</resources>
